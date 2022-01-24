@@ -9,10 +9,11 @@ import SwiftUI
 
 struct MushroomCupView: View {
 
-@State private var toggleTracker1 = false
-@State private var toggleTracker2 = false
-@State private var toggleTracker3 = false
-@State private var toggleTracker4 = false
+@State var toggleTracker1 = false
+@State var toggleTracker2 = false
+@State var toggleTracker3 = false
+@State var toggleTracker4 = false
+@State var vibrateOnRing = true
     
 //Probably need to make variables to store the state of the button
     
@@ -24,8 +25,9 @@ struct MushroomCupView: View {
 //Add a toggle to each of these, if toggle isOff/On then grey out the image or hide it
             
         HStack{
-            Image("MarioKartStadium")
+            Image(systemName: toggleTracker1 ? "MarioKartStadium" : "MusicPark")
                 .trackImageModifier()
+            
             Toggle("Mario Kart Stadium", isOn: $toggleTracker1)
                 .padding()
         }
@@ -52,12 +54,19 @@ struct MushroomCupView: View {
         HStack{
             Image("WaterPark")
                 .trackImageModifier()
-            Toggle("Water Park", isOn: $toggleTracker3)
+            Toggle("Water Park", isOn: $toggleTracker4)
                 .padding()
         }
-        Spacer()
-            }
             
+        Spacer()
+        
+        //Example of writing a toggle where the contents are more than just text
+        Toggle(isOn: $vibrateOnRing){
+                Text("Hello")
+                Image("Star")
+                    .trackImageModifier()
+                }
+            }
         }
     }
 }
