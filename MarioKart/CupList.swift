@@ -14,10 +14,6 @@ struct CupList: View {
     private var cupImageName = ["Mushroom", "Flower", "Star", "Special", "Shell", "Banana", "Leaf", "Lightning", "Egg", "Illuminati", "Crossing", "Bell"]
     //create a navigation view and list view which loops over the cup names in the array for each item
     
-    // create another thing that loops over images in the asset catalog and creates a Hstack for each item in the navigation view
-    
-
-    
     
     var body: some View {
         NavigationView{
@@ -26,9 +22,7 @@ struct CupList: View {
                     NavigationLink(destination: MushroomCupView()) {
                         HStack{
                         Image(cupImageName[0])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[0])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -36,9 +30,7 @@ struct CupList: View {
                     NavigationLink(destination: FlowerCupView()) {
                         HStack{
                         Image(cupImageName[1])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[1])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -46,9 +38,7 @@ struct CupList: View {
                     NavigationLink(destination: StarCupView()) {
                         HStack{
                         Image(cupImageName[2])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[2])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -56,9 +46,7 @@ struct CupList: View {
                     NavigationLink(destination: SpecialCupView()) {
                         HStack{
                         Image(cupImageName[3])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[3])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -66,9 +54,7 @@ struct CupList: View {
                     NavigationLink(destination: ShellCupView()) {
                         HStack{
                         Image(cupImageName[4])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[4])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -76,9 +62,7 @@ struct CupList: View {
                     NavigationLink(destination: BananaCupView()) {
                         HStack{
                         Image(cupImageName[5])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[5])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -87,9 +71,7 @@ struct CupList: View {
                     NavigationLink(destination: LeafCupView()) {
                         HStack{
                         Image(cupImageName[6])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[6])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -97,9 +79,7 @@ struct CupList: View {
                     NavigationLink(destination: LightningCupView()) {
                         HStack{
                         Image(cupImageName[7])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[7])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -107,9 +87,7 @@ struct CupList: View {
                     NavigationLink(destination: EggCupView()) {
                         HStack{
                         Image(cupImageName[8])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[8])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -117,9 +95,7 @@ struct CupList: View {
                     NavigationLink(destination: IlluminatiCupView()) {
                         HStack{
                         Image(cupImageName[9])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[9])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -127,9 +103,7 @@ struct CupList: View {
                     NavigationLink(destination: CrossingCupView()) {
                         HStack{
                         Image(cupImageName[10])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[10])
                         }
                     }.buttonStyle(PlainButtonStyle())
@@ -137,9 +111,7 @@ struct CupList: View {
                     NavigationLink(destination: BellCupView()) {
                         HStack{
                         Image(cupImageName[11])
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
+                            .cupImageModifier()
                         Text(cupNames[11])
                         }
                     }.buttonStyle(PlainButtonStyle())

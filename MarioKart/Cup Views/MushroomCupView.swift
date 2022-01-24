@@ -9,7 +9,38 @@ import SwiftUI
 
 struct MushroomCupView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+        Text("Mushroom Cup")
+         
+            HStack{
+                //Design these into button elements
+                VStack{
+                Text("Mario Kart Stadium")
+                Image("MarioKartStadium")
+                    .trackImageModifier()
+                }
+                VStack{
+                Text("Sweet Sweet Canyon")
+                Image("SweetSweetCanyon")
+                    .trackImageModifier()
+                }
+
+            }
+            HStack{
+                //Design these into button elements
+                VStack{
+                Text("Thwomp Ruins")
+                Image("ThwompRuins")
+                    .trackImageModifier()
+                }
+                VStack{
+                Text("Water Park")
+                Image("WaterPark")
+                    .trackImageModifier()
+            }
+            
+        }
+        }
     }
 }
 
