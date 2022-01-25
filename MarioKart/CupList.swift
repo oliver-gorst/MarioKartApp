@@ -9,9 +9,11 @@ import SwiftUI
 
 struct CupList: View {
     
-    private var cupNames = ["Mushroom Cup", "Flower Cup", "Star Cup", "Special Cup", "Shell Cup", "Banana Cup", "Leaf Cup", "Lightning Cup", "Egg Cup", "Illuminati Cup", "Crossing Cup", "Bell Cup"]
+    private var cupNames = ["Mushroom Cup", "Shell Cup", "Flower Cup", "Banana Cup", "Star Cup", "Leaf Cup", "Special Cup", "Lightning Cup", "Egg Cup", "Illuminati Cup", "Crossing Cup", "Bell Cup"]
     
-    private var cupImageName = ["Mushroom", "Flower", "Star", "Special", "Shell", "Banana", "Leaf", "Lightning", "Egg", "Illuminati", "Crossing", "Bell"]
+    private var cupImageName = ["Mushroom", "Shell", "Flower", "Banana", "Star", "Leaf", "Special", "Lightning", "Egg", "Illuminati", "Crossing", "Bell"]
+    
+
     //create a navigation view and list view which loops over the cup names in the array for each item
 
     

@@ -99,17 +99,17 @@
 			isa = PBXGroup;
 			children = (
 				4978A21F279E233C000E527A /* MushroomCupView.swift */,
-				4978A222279E23E8000E527A /* FlowerCupView.swift */,
-				4978A224279E2405000E527A /* StarCupView.swift */,
-				4978A226279E2413000E527A /* SpecialCupView.swift */,
 				4978A228279E243A000E527A /* ShellCupView.swift */,
+				4978A222279E23E8000E527A /* FlowerCupView.swift */,
 				4978A22A279E244B000E527A /* BananaCupView.swift */,
+				4978A224279E2405000E527A /* StarCupView.swift */,
 				4978A22C279E2475000E527A /* LeafCupView.swift */,
+				4978A226279E2413000E527A /* SpecialCupView.swift */,
 				4978A22E279E2484000E527A /* LightningCupView.swift */,
 				4978A230279E2495000E527A /* EggCupView.swift */,
 				4978A232279E24A6000E527A /* IlluminatiCupView.swift */,
-				4978A234279E24B5000E527A /* BellCupView.swift */,
 				4978A236279E24CD000E527A /* CrossingCupView.swift */,
+				4978A234279E24B5000E527A /* BellCupView.swift */,
 			);
 			path = "Cup Views";
 			sourceTree = "<group>";
