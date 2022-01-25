@@ -14,6 +14,7 @@ struct MushroomCupView: View {
 @State var toggleTracker3 = false
 @State var toggleTracker4 = false
 @State var vibrateOnRing = true
+
     
 //Probably need to make variables to store the state of the button
     
@@ -23,9 +24,11 @@ struct MushroomCupView: View {
         Text("Mushroom Cup")
         Spacer()
 //Add a toggle to each of these, if toggle isOff/On then grey out the image or hide it
+        
+
             
         HStack{
-            Image(systemName: toggleTracker1 ? "MarioKartStadium" : "MusicPark")
+            Image(toggleTracker1 ? "MarioKartStadium_grey" : "MarioKartStadium")
                 .trackImageModifier()
             
             Toggle("Mario Kart Stadium", isOn: $toggleTracker1)

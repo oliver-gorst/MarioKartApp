@@ -13,6 +13,7 @@ struct CupList: View {
     
     private var cupImageName = ["Mushroom", "Flower", "Star", "Special", "Shell", "Banana", "Leaf", "Lightning", "Egg", "Illuminati", "Crossing", "Bell"]
     //create a navigation view and list view which loops over the cup names in the array for each item
+
     
     
     var body: some View {
