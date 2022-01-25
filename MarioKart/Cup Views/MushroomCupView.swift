@@ -9,12 +9,12 @@ import SwiftUI
 
 struct MushroomCupView: View {
 
-@AppStorage ("meowTest") var meowTest = false
-@State var toggleTracker1: Bool = false
-@State var toggleTracker2 = false
-@State var toggleTracker3 = false
-@State var toggleTracker4 = false
-@State var vibrateOnRing = true
+
+@AppStorage ("toggleTracker1") var toggleTracker1 = false
+@AppStorage ("toggleTracker2") var toggleTracker2 = false
+@AppStorage ("toggleTracker3") var toggleTracker3 = false
+@AppStorage ("toggletracker4") var toggleTracker4 = false
+
 
     
 //Probably need to make variables to store the state of the button
@@ -23,14 +23,14 @@ struct MushroomCupView: View {
         VStack{
         Spacer()
         Text("Mushroom Cup")
+                .fontWeight(.bold)
+                .font(.system(size:40))
         Spacer()
 //Add a toggle to each of these, if toggle isOff/On then grey out the image or hide it
         
-        //@AppStorage proprty wrapper seems to keep in memory the state of the toggle
-        Toggle("meow test is here to stay", isOn: $meowTest)
-            
+        
         HStack{
-            Image(toggleTracker1 ? "MarioKartStadium_grey" : "MarioKartStadium")
+            Image(toggleTracker1 ? "" : "MarioKartStadium")
                 .trackImageModifier()
             
             Toggle("Mario Kart Stadium", isOn: $toggleTracker1)
@@ -39,17 +39,17 @@ struct MushroomCupView: View {
         
         Spacer()
         HStack{
-            Image("SweetSweetCanyon")
+            Image(toggleTracker2 ? "" : "WaterPark")
             .trackImageModifier()
-            Toggle("Sweet Sweet Canyon", isOn: $toggleTracker2)
+            Toggle("Water Park", isOn: $toggleTracker2)
                 .padding()
         }
         
         Spacer()
         HStack{
-            Image("ThwompRuins")
+            Image(toggleTracker3 ? "" : "SweetSweetCanyon")
             .trackImageModifier()
-            Toggle("Throwp Ruins", isOn: $toggleTracker3)
+            Toggle("Sweet Sweet Canyon", isOn: $toggleTracker3)
                 .padding()
         }
         
@@ -57,20 +57,12 @@ struct MushroomCupView: View {
             
         Spacer()
         HStack{
-            Image("WaterPark")
+            Image(toggleTracker4 ? "" : "ThwompRuins")
                 .trackImageModifier()
-            Toggle("Water Park", isOn: $toggleTracker4)
+            Toggle("Thwomp Ruins", isOn: $toggleTracker4)
                 .padding()
         }
-            
         Spacer()
-        
-        //Example of writing a toggle where the contents are more than just text
-        Toggle(isOn: $vibrateOnRing){
-                Text("Hello")
-                Image("Star")
-                    .trackImageModifier()
-                }
             }
         }
     }

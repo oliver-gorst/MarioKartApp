@@ -22,8 +22,8 @@
 		4978A22F279E2484000E527A /* LightningCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978A22E279E2484000E527A /* LightningCupView.swift */; };
 		4978A231279E2495000E527A /* EggCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978A230279E2495000E527A /* EggCupView.swift */; };
 		4978A233279E24A6000E527A /* IlluminatiCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978A232279E24A6000E527A /* IlluminatiCupView.swift */; };
-		4978A235279E24B5000E527A /* CrossingCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978A234279E24B5000E527A /* CrossingCupView.swift */; };
-		4978A237279E24CD000E527A /* BellCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978A236279E24CD000E527A /* BellCupView.swift */; };
+		4978A235279E24B5000E527A /* BellCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978A234279E24B5000E527A /* BellCupView.swift */; };
+		4978A237279E24CD000E527A /* CrossingCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4978A236279E24CD000E527A /* CrossingCupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,8 @@
 		4978A22E279E2484000E527A /* LightningCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightningCupView.swift; sourceTree = "<group>"; };
 		4978A230279E2495000E527A /* EggCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggCupView.swift; sourceTree = "<group>"; };
 		4978A232279E24A6000E527A /* IlluminatiCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IlluminatiCupView.swift; sourceTree = "<group>"; };
-		4978A234279E24B5000E527A /* CrossingCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossingCupView.swift; sourceTree = "<group>"; };
-		4978A236279E24CD000E527A /* BellCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellCupView.swift; sourceTree = "<group>"; };
+		4978A234279E24B5000E527A /* BellCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellCupView.swift; sourceTree = "<group>"; };
+		4978A236279E24CD000E527A /* CrossingCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossingCupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,8 @@
 				4978A22E279E2484000E527A /* LightningCupView.swift */,
 				4978A230279E2495000E527A /* EggCupView.swift */,
 				4978A232279E24A6000E527A /* IlluminatiCupView.swift */,
-				4978A234279E24B5000E527A /* CrossingCupView.swift */,
-				4978A236279E24CD000E527A /* BellCupView.swift */,
+				4978A234279E24B5000E527A /* BellCupView.swift */,
+				4978A236279E24CD000E527A /* CrossingCupView.swift */,
 			);
 			path = "Cup Views";
 			sourceTree = "<group>";
@@ -187,8 +187,8 @@
 				4978A229279E243A000E527A /* ShellCupView.swift in Sources */,
 				4978A223279E23E8000E527A /* FlowerCupView.swift in Sources */,
 				4978A225279E2405000E527A /* StarCupView.swift in Sources */,
-				4978A235279E24B5000E527A /* CrossingCupView.swift in Sources */,
-				4978A237279E24CD000E527A /* BellCupView.swift in Sources */,
+				4978A235279E24B5000E527A /* BellCupView.swift in Sources */,
+				4978A237279E24CD000E527A /* CrossingCupView.swift in Sources */,
 				4978A21C279B56BC000E527A /* CupList.swift in Sources */,
 				4978A220279E233C000E527A /* MushroomCupView.swift in Sources */,
 				4978A231279E2495000E527A /* EggCupView.swift in Sources */,

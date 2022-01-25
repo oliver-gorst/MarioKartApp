@@ -8,9 +8,62 @@
 import SwiftUI
 
 struct LightningCupView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+    @AppStorage ("toggleTracker29") var toggleTracker29 = false
+    @AppStorage ("toggleTracker30") var toggleTracker30 = false
+    @AppStorage ("toggleTracker31") var toggleTracker31 = false
+    @AppStorage ("toggletracker32") var toggleTracker32 = false
+
+
+        
+    //Probably need to make variables to store the state of the button
+        
+        var body: some View {
+            VStack{
+            Spacer()
+            Text("Lighning Cup")
+                    .fontWeight(.bold)
+                    .font(.system(size:40))
+            Spacer()
+    //Add a toggle to each of these, if toggle isOff/On then grey out the image or hide it
+            
+            
+            HStack{
+                Image(toggleTracker29 ? "" : "TickTockClock")
+                    .trackImageModifier()
+                
+                Toggle("Tick Tock Clock", isOn: $toggleTracker29)
+                    .padding()
+            }
+            
+            Spacer()
+            HStack{
+                Image(toggleTracker30 ? "" : "PiranhaPlantSlide")
+                .trackImageModifier()
+                Toggle("Piranha Plant Slide", isOn: $toggleTracker30)
+                    .padding()
+            }
+            
+            Spacer()
+            HStack{
+                Image(toggleTracker31 ? "" : "GrumbleVolcano")
+                .trackImageModifier()
+                Toggle("Grumble Volcano", isOn: $toggleTracker31)
+                    .padding()
+            }
+            
+            Group{
+                
+            Spacer()
+            HStack{
+                Image(toggleTracker32 ? "" : "RainbowRoadLightning")
+                    .trackImageModifier()
+                Toggle("Rainbow Road", isOn: $toggleTracker32)
+                    .padding()
+            }
+            Spacer()
+                }
+            }
+        }
 }
 
 struct LightningCupView_Previews: PreviewProvider {
