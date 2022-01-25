@@ -10,7 +10,7 @@ import SwiftUI
 struct MushroomCupView: View {
 
 
-@AppStorage ("toggleTracker1") var toggleTracker1 = false
+@State var toggleTracker1 = false
 @AppStorage ("toggleTracker2") var toggleTracker2 = false
 @AppStorage ("toggleTracker3") var toggleTracker3 = false
 @AppStorage ("toggletracker4") var toggleTracker4 = false
