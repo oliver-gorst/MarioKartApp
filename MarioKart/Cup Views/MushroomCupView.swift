@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MushroomCupView: View {
 
-@State var toggleTracker1 = false
+@AppStorage ("meowTest") var meowTest = false
+@State var toggleTracker1: Bool = false
 @State var toggleTracker2 = false
 @State var toggleTracker3 = false
 @State var toggleTracker4 = false
@@ -25,7 +26,8 @@ struct MushroomCupView: View {
         Spacer()
 //Add a toggle to each of these, if toggle isOff/On then grey out the image or hide it
         
-
+        //@AppStorage proprty wrapper seems to keep in memory the state of the toggle
+        Toggle("meow test is here to stay", isOn: $meowTest)
             
         HStack{
             Image(toggleTracker1 ? "MarioKartStadium_grey" : "MarioKartStadium")
@@ -38,7 +40,7 @@ struct MushroomCupView: View {
         Spacer()
         HStack{
             Image("SweetSweetCanyon")
-                .trackImageModifier()
+            .trackImageModifier()
             Toggle("Sweet Sweet Canyon", isOn: $toggleTracker2)
                 .padding()
         }
@@ -46,7 +48,7 @@ struct MushroomCupView: View {
         Spacer()
         HStack{
             Image("ThwompRuins")
-                .trackImageModifier()
+            .trackImageModifier()
             Toggle("Throwp Ruins", isOn: $toggleTracker3)
                 .padding()
         }

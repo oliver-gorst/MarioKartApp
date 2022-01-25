@@ -14,12 +14,14 @@ extension Image {
             .resizable()
             .scaledToFit()
             .frame(width: 100, height: 100)
+            .cornerRadius(15)
     }
     func trackImageModifier() -> some View {
         self
             .resizable()
             .scaledToFit()
             .frame(width: 200, height: 100)
+            .cornerRadius(15)
     }
 }
 
