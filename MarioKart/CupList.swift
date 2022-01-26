@@ -14,7 +14,7 @@ struct CupList: View {
     private var cupImageName = ["Mushroom", "Shell", "Flower", "Banana", "Star", "Leaf", "Special", "Lightning", "Egg", "Illuminati", "Crossing", "Bell"]
     
 
-    //create a navigation view and list view which loops over the cup names in the array for each item
+    //Need to define the variables in the child views here in the parent view
 
     
     

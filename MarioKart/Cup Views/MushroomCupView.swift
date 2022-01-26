@@ -10,14 +10,11 @@ import SwiftUI
 struct MushroomCupView: View {
 
 
-@State var toggleTracker1 = false
+@AppStorage ("toggleTracker1") var toggleTracker1 = false
 @AppStorage ("toggleTracker2") var toggleTracker2 = false
 @AppStorage ("toggleTracker3") var toggleTracker3 = false
 @AppStorage ("toggletracker4") var toggleTracker4 = false
 
-
-    
-//Probably need to make variables to store the state of the button
     
     var body: some View {
         VStack{
