@@ -26,11 +26,29 @@ extension Image {
     }
 }
 
-struct ContentView: View {    
+
+struct ContentView: View {
+  
+@State private var showingAlert = false
+    
     
     var body: some View {
         VStack{
             CupList()
+    
+            
+            Button("Clear Toggles") {
+                if let bundleID = Bundle.main.bundleIdentifier {
+                    UserDefaults.standard.removePersistentDomain(forName: bundleID)
+                }
+            }
+            .padding()
+            .foregroundColor(.white)
+            .background(Color.red.opacity(0.9))
+            .clipShape(Capsule())
+
+
+            Spacer()
         }
     }
 }
