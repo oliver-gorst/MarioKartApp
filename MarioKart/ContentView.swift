@@ -36,19 +36,34 @@ struct ContentView: View {
         VStack{
             CupList()
     
-            
-            Button("Clear Toggles") {
-                if let bundleID = Bundle.main.bundleIdentifier {
-                    UserDefaults.standard.removePersistentDomain(forName: bundleID)
-                }
-            }
-            .padding()
-            .foregroundColor(.white)
-            .background(Color.red.opacity(0.9))
-            .clipShape(Capsule())
-
-
             Spacer()
+            
+            Button(action: {
+                showingAlert = true
+            }) {
+                HStack{
+                    Image(systemName:"trash")
+                    Text("Clear Track History")
+                }
+                
+            }
+            .padding(7)
+            .font(.system(size: 15, weight: .heavy, design: .default))
+            .background(LinearGradient(gradient: Gradient(colors: [.yellow, .red]), startPoint: .leading, endPoint: .trailing))
+            .foregroundColor(.white)
+            .clipShape(Capsule())
+            .alert(isPresented:$showingAlert) {
+                        Alert(
+                            title: Text("Do you want to clear all track history daddy?"),
+                            message: Text("This action can not be undone"),
+                            primaryButton: .destructive(Text("Clear")) {
+                                if let bundleID = Bundle.main.bundleIdentifier {
+                                    UserDefaults.standard.removePersistentDomain(forName: bundleID)
+                                                }
+                            },
+                            secondaryButton: .cancel()
+                        )
+            }
         }
     }
 }
