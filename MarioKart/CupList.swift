@@ -31,7 +31,7 @@ struct CupList: View {
                         }
                     }.buttonStyle(PlainButtonStyle())
                     
-                    NavigationLink(destination: FlowerCupView()) {
+                    NavigationLink(destination: ShellCupView()) {
                         HStack{
                         Image(cupImageName[1])
                             .cupImageModifier()
@@ -39,7 +39,7 @@ struct CupList: View {
                         }
                     }.buttonStyle(PlainButtonStyle())
                     
-                    NavigationLink(destination: StarCupView()) {
+                    NavigationLink(destination: FlowerCupView()) {
                         HStack{
                         Image(cupImageName[2])
                             .cupImageModifier()
@@ -47,7 +47,7 @@ struct CupList: View {
                         }
                     }.buttonStyle(PlainButtonStyle())
                     
-                    NavigationLink(destination: SpecialCupView()) {
+                    NavigationLink(destination: BananaCupView()) {
                         HStack{
                         Image(cupImageName[3])
                             .cupImageModifier()
@@ -55,7 +55,7 @@ struct CupList: View {
                         }
                     }.buttonStyle(PlainButtonStyle())
                     
-                    NavigationLink(destination: ShellCupView()) {
+                    NavigationLink(destination: StarCupView()) {
                         HStack{
                         Image(cupImageName[4])
                             .cupImageModifier()
@@ -63,7 +63,7 @@ struct CupList: View {
                         }
                     }.buttonStyle(PlainButtonStyle())
                     
-                    NavigationLink(destination: BananaCupView()) {
+                    NavigationLink(destination: LeafCupView()) {
                         HStack{
                         Image(cupImageName[5])
                             .cupImageModifier()
@@ -72,7 +72,7 @@ struct CupList: View {
                     }.buttonStyle(PlainButtonStyle())
                 }
                 Group {
-                    NavigationLink(destination: LeafCupView()) {
+                    NavigationLink(destination: SpecialCupView()) {
                         HStack{
                         Image(cupImageName[6])
                             .cupImageModifier()

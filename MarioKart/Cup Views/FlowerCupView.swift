@@ -50,7 +50,7 @@ struct FlowerCupView: View {
                 Toggle("Twisted Mansion", isOn: $toggleTracker7)
                     .padding()
             }
-            
+                
             Group{
                 
             Spacer()

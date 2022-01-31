@@ -20,7 +20,7 @@ struct LightningCupView: View {
         var body: some View {
             VStack{
             Spacer()
-            Text("Lighning Cup")
+            Text("Lightning Cup")
                     .fontWeight(.bold)
                     .font(.system(size:40))
             Spacer()
