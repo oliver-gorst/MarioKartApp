@@ -54,7 +54,7 @@ struct ContentView: View {
             .clipShape(Capsule())
             .alert(isPresented:$showingAlert) {
                         Alert(
-                            title: Text("Do you want to clear all track history daddy?"),
+                            title: Text("Do you want to clear all track history?"),
                             message: Text("This action can not be undone"),
                             primaryButton: .destructive(Text("Clear")) {
                                 if let bundleID = Bundle.main.bundleIdentifier {
