@@ -43,7 +43,7 @@ struct ContentView: View {
             }) {
                 HStack{
                     Image(systemName:"trash")
-                    Text("Clear Track History")
+                    Text("Clear Track History.")
                 }
                 
             }
