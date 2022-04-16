@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GoldenDashCup: View {
+struct GoldenDashCupView: View {
 
 
 @AppStorage ("toggleTracker45") var toggleTracker45 = false

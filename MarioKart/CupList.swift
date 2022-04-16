@@ -9,11 +9,11 @@ import SwiftUI
 
 struct CupList: View {
     
-    private var cupNames = ["Mushroom Cup", "Shell Cup", "Flower Cup", "Banana Cup", "Star Cup", "Leaf Cup", "Special Cup", "Lightning Cup", "Egg Cup", "Illuminati Cup", "Crossing Cup", "Bell Cup"]
+    private var cupNames = ["Mushroom Cup", "Shell Cup", "Flower Cup", "Banana Cup", "Star Cup", "Leaf Cup", "Special Cup", "Lightning Cup", "Egg Cup", "Illuminati Cup", "Crossing Cup", "Bell Cup", "Golden Dash Cup", "Lucky Cat Cup"]
     
-    private var cupImageName = ["Mushroom", "Shell", "Flower", "Banana", "Star", "Leaf", "Special", "Lightning", "Egg", "Illuminati", "Crossing", "Bell"]
+    private var cupImageName = ["Mushroom", "Shell", "Flower", "Banana", "Star", "Leaf", "Special", "Lightning", "Egg", "Illuminati", "Crossing", "Bell", "GoldenDash", "LuckyCat"]
     
-    private var allTrackNames = ["Mario Kart Stadium", "Water Park", "Sweet Sweet Canyon", "Thwomp Ruins", "Moo Moo Meadows", "Mario Circuit", "Cheep Cheep Beach", "Toad's Turnpike", "Mario Circuit", "Toad Harbor", "Twisted Mansion", "Shy Guy Falls", "Dry Dry Desert", "Donut Plains 3", "Royal Raceway", "DK Jungle", "Sunshine Airport", "Dolphin Shoals", "Electrodome", "Mount Wario", "Wario Stadium", "Sherbet Land", "Music Park", "Yoshi Valley", "Cloudtop Cruise", "Bone Dry Dunes", "Bowser's Castle", "Rainbow Road", "Tick Tock Clock", "Piranha Plant Slide", "Grumble Volcano", "Rainbow Road", "Yoshi's Circuit", "Excitebike Arena", "Dragon Driftway", "Mute City", "Wario's Goldmine", "Rainbow Road", "Ice Ice Outpost", "Hyrule Circuit", "Baby Park", "Cheese Land", "Wild Woods", "Animal Crossing", "Neo Bowser City", "Ribbon Road", "Super Bell Subway", "Big Blue"]
+    private var allTrackNames = ["Mario Kart Stadium", "Water Park", "Sweet Sweet Canyon", "Thwomp Ruins", "Moo Moo Meadows", "Mario Circuit", "Cheep Cheep Beach", "Toad's Turnpike", "Mario Circuit", "Toad Harbor", "Twisted Mansion", "Shy Guy Falls", "Dry Dry Desert", "Donut Plains 3", "Royal Raceway", "DK Jungle", "Sunshine Airport", "Dolphin Shoals", "Electrodome", "Mount Wario", "Wario Stadium", "Sherbet Land", "Music Park", "Yoshi Valley", "Cloudtop Cruise", "Bone Dry Dunes", "Bowser's Castle", "Rainbow Road", "Tick Tock Clock", "Piranha Plant Slide", "Grumble Volcano", "Rainbow Road", "Yoshi's Circuit", "Excitebike Arena", "Dragon Driftway", "Mute City", "Wario's Goldmine", "Rainbow Road", "Ice Ice Outpost", "Hyrule Circuit", "Baby Park", "Cheese Land", "Wild Woods", "Animal Crossing", "Neo Bowser City", "Ribbon Road", "Super Bell Subway", "Big Blue", "Paris Promenade", "Toad Circuit", "Choco Mountain", "Coconut Mall", "Tokyo Blur", "Shroom Ridge", "Sky Garden", "Ninja Hideaway"]
     
 
     //Need to define the variables in the child views here in the parent view
@@ -216,6 +216,38 @@ struct CupList: View {
                                 Text(allTrackNames[45])
                                 Text(allTrackNames[46])
                                 Text(allTrackNames[47])
+                            }
+                        }
+                    }.buttonStyle(PlainButtonStyle())
+                    
+                    NavigationLink(destination: GoldenDashCupView()) {
+                        HStack{
+                        Image(cupImageName[12])
+                            .cupImageModifier()
+                            VStack{
+                            Text(cupNames[12])
+                                    .font(.system(size: 20, weight: .heavy, design: .default))
+                                    .underline()
+                                Text(allTrackNames[48])
+                                Text(allTrackNames[49])
+                                Text(allTrackNames[50])
+                                Text(allTrackNames[51])
+                            }
+                        }
+                    }.buttonStyle(PlainButtonStyle())
+                    
+                    NavigationLink(destination: LuckyCatCupView()) {
+                        HStack{
+                        Image(cupImageName[13])
+                            .cupImageModifier()
+                            VStack{
+                            Text(cupNames[14])
+                                    .font(.system(size: 20, weight: .heavy, design: .default))
+                                    .underline()
+                                Text(allTrackNames[52])
+                                Text(allTrackNames[53])
+                                Text(allTrackNames[54])
+                                Text(allTrackNames[555])
                             }
                         }
                     }.buttonStyle(PlainButtonStyle())

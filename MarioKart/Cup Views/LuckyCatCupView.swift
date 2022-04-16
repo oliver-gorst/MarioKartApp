@@ -10,16 +10,16 @@ import SwiftUI
 struct LuckyCatCupView: View {
 
 
-@AppStorage ("toggleTracker1") var toggleTracker1 = false
-@AppStorage ("toggleTracker2") var toggleTracker2 = false
-@AppStorage ("toggleTracker3") var toggleTracker3 = false
-@AppStorage ("toggletracker4") var toggleTracker4 = false
+@AppStorage ("toggleTracker49") var toggleTracker49 = false
+@AppStorage ("toggleTracker50") var toggleTracker50 = false
+@AppStorage ("toggleTracker51") var toggleTracker51 = false
+@AppStorage ("toggletracker52") var toggleTracker52 = false
 
     
     var body: some View {
         VStack{
         Spacer()
-        Text("Mushroom Cup")
+        Text("Lucky Cat Cup")
                 .fontWeight(.bold)
                 .font(.system(size:40))
         Spacer()
@@ -27,26 +27,26 @@ struct LuckyCatCupView: View {
         
         
         HStack{
-            Image(toggleTracker1 ? "" : "MarioKartStadium")
+            Image(toggleTracker49 ? "" : "TokyoBlur")
                 .trackImageModifier()
             
-            Toggle("Mario Kart Stadium", isOn: $toggleTracker1)
+            Toggle("Tokyo Blur", isOn: $toggleTracker49)
                 .padding()
         }
         
         Spacer()
         HStack{
-            Image(toggleTracker2 ? "" : "WaterPark")
+            Image(toggleTracker50 ? "" : "ShroomRidge")
             .trackImageModifier()
-            Toggle("Water Park", isOn: $toggleTracker2)
+            Toggle("Shroom Ridge", isOn: $toggleTracker50)
                 .padding()
         }
         
         Spacer()
         HStack{
-            Image(toggleTracker3 ? "" : "SweetSweetCanyon")
+            Image(toggleTracker51 ? "" : "SkyGarden")
             .trackImageModifier()
-            Toggle("Sweet Sweet Canyon", isOn: $toggleTracker3)
+            Toggle("Sky Garden", isOn: $toggleTracker51)
                 .padding()
         }
         
@@ -54,9 +54,9 @@ struct LuckyCatCupView: View {
             
         Spacer()
         HStack{
-            Image(toggleTracker4 ? "" : "ThwompRuins")
+            Image(toggleTracker52 ? "" : "NinjaHideaway")
                 .trackImageModifier()
-            Toggle("Thwomp Ruins", isOn: $toggleTracker4)
+            Toggle("Ninja Hideaway", isOn: $toggleTracker52)
                 .padding()
         }
         Spacer()
@@ -66,9 +66,9 @@ struct LuckyCatCupView: View {
 }
 
 
-struct MushroomCupView_Previews: PreviewProvider {
+struct LuckyCatCupView_Previews: PreviewProvider {
     static var previews: some View {
-        MushroomCupView()
+        LuckyCatCupView()
     }
 }
 
