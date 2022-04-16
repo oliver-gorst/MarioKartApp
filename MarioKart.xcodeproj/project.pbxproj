@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492F7886280A74A40038ECB9 /* GoldenDashCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F7885280A74A40038ECB9 /* GoldenDashCupView.swift */; };
+		492F7888280A74B40038ECB9 /* LuckyCatCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492F7887280A74B40038ECB9 /* LuckyCatCupView.swift */; };
 		4945B345279B41180053827D /* MarioKartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945B344279B41180053827D /* MarioKartApp.swift */; };
 		4945B347279B41180053827D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4945B346279B41180053827D /* ContentView.swift */; };
 		4945B349279B41190053827D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4945B348279B41190053827D /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492F7885280A74A40038ECB9 /* GoldenDashCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenDashCupView.swift; sourceTree = "<group>"; };
+		492F7887280A74B40038ECB9 /* LuckyCatCupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyCatCupView.swift; sourceTree = "<group>"; };
 		4945B341279B41180053827D /* MarioKart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarioKart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4945B344279B41180053827D /* MarioKartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarioKartApp.swift; sourceTree = "<group>"; };
 		4945B346279B41180053827D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				4978A232279E24A6000E527A /* IlluminatiCupView.swift */,
 				4978A236279E24CD000E527A /* CrossingCupView.swift */,
 				4978A234279E24B5000E527A /* BellCupView.swift */,
+				492F7885280A74A40038ECB9 /* GoldenDashCupView.swift */,
+				492F7887280A74B40038ECB9 /* LuckyCatCupView.swift */,
 			);
 			path = "Cup Views";
 			sourceTree = "<group>";
@@ -189,6 +195,7 @@
 				4978A225279E2405000E527A /* StarCupView.swift in Sources */,
 				4978A235279E24B5000E527A /* BellCupView.swift in Sources */,
 				4978A237279E24CD000E527A /* CrossingCupView.swift in Sources */,
+				492F7888280A74B40038ECB9 /* LuckyCatCupView.swift in Sources */,
 				4978A21C279B56BC000E527A /* CupList.swift in Sources */,
 				4978A220279E233C000E527A /* MushroomCupView.swift in Sources */,
 				4978A231279E2495000E527A /* EggCupView.swift in Sources */,
@@ -198,6 +205,7 @@
 				4978A22D279E2475000E527A /* LeafCupView.swift in Sources */,
 				4978A22B279E244B000E527A /* BananaCupView.swift in Sources */,
 				4978A233279E24A6000E527A /* IlluminatiCupView.swift in Sources */,
+				492F7886280A74A40038ECB9 /* GoldenDashCupView.swift in Sources */,
 				4978A227279E2413000E527A /* SpecialCupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
