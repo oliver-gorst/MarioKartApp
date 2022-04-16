@@ -219,6 +219,7 @@ struct CupList: View {
                             }
                         }
                     }.buttonStyle(PlainButtonStyle())
+                
                     
                     NavigationLink(destination: GoldenDashCupView()) {
                         HStack{
@@ -257,7 +258,6 @@ struct CupList: View {
         }
     }
 }
-
 
 
 
