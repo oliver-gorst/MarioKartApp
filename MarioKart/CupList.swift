@@ -17,7 +17,7 @@ struct CupList: View {
     
 
     //Need to define the variables in the child views here in the parent view
-
+    //Update with new tracks for expansion
     
     //Add a section into the table below, need a button or something that wil cause all vairables to be reset back to false
     
