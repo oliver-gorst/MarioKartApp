@@ -30,7 +30,7 @@ struct LuckyCatCupView: View {
             Image(toggleTracker49 ? "" : "TokyoBlur")
                 .trackImageModifier()
             
-            Toggle("Tokyo Blur", isOn: $toggleTracker49)
+            Toggle("Tokyo Blur.", isOn: $toggleTracker49)
                 .padding()
         }
         
