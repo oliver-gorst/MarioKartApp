@@ -55,7 +55,7 @@ struct ContentView: View {
             .alert(isPresented:$showingAlert) {
                         Alert(
                             title: Text("Do you want to clear all track history?"),
-                            message: Text("This action can not be undone"),
+                            message: Text("This action can not be undone."),
                             primaryButton: .destructive(Text("Clear")) {
                                 if let bundleID = Bundle.main.bundleIdentifier {
                                     UserDefaults.standard.removePersistentDomain(forName: bundleID)
