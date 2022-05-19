@@ -242,13 +242,13 @@ struct CupList: View {
                         Image(cupImageName[13])
                             .cupImageModifier()
                             VStack{
-                            Text(cupNames[14])
+                            Text(cupNames[13])
                                     .font(.system(size: 20, weight: .heavy, design: .default))
                                     .underline()
                                 Text(allTrackNames[52])
                                 Text(allTrackNames[53])
                                 Text(allTrackNames[54])
-                                Text(allTrackNames[555])
+                                Text(allTrackNames[55])
                             }
                         }
                     }.buttonStyle(PlainButtonStyle())
