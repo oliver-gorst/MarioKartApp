@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct CupList: View {
-    
+    //Add in the new Cap Names
     private var cupNames = ["Mushroom Cup", "Shell Cup", "Flower Cup", "Banana Cup", "Star Cup", "Leaf Cup", "Special Cup", "Lightning Cup", "Egg Cup", "Illuminati Cup", "Crossing Cup", "Bell Cup", "Golden Dash Cup", "Lucky Cat Cup"]
-    
+    //Add in the new Cup Images
     private var cupImageName = ["Mushroom", "Shell", "Flower", "Banana", "Star", "Leaf", "Special", "Lightning", "Egg", "Illuminati", "Crossing", "Bell", "GoldenDash", "LuckyCat"]
-    
+    //Add in the new Track Names
     private var allTrackNames = ["Mario Kart Stadium", "Water Park", "Sweet Sweet Canyon", "Thwomp Ruins", "Moo Moo Meadows", "Mario Circuit", "Cheep Cheep Beach", "Toad's Turnpike", "Mario Circuit", "Toad Harbor", "Twisted Mansion", "Shy Guy Falls", "Dry Dry Desert", "Donut Plains 3", "Royal Raceway", "DK Jungle", "Sunshine Airport", "Dolphin Shoals", "Electrodome", "Mount Wario", "Wario Stadium", "Sherbet Land", "Music Park", "Yoshi Valley", "Cloudtop Cruise", "Bone Dry Dunes", "Bowser's Castle", "Rainbow Road", "Tick Tock Clock", "Piranha Plant Slide", "Grumble Volcano", "Rainbow Road", "Yoshi's Circuit", "Excitebike Arena", "Dragon Driftway", "Mute City", "Wario's Goldmine", "Rainbow Road", "Ice Ice Outpost", "Hyrule Circuit", "Baby Park", "Cheese Land", "Wild Woods", "Animal Crossing", "Neo Bowser City", "Ribbon Road", "Super Bell Subway", "Big Blue", "Paris Promenade", "Toad Circuit", "Choco Mountain", "Coconut Mall", "Tokyo Blur", "Shroom Ridge", "Sky Garden", "Ninja Hideaway"]
     
 
