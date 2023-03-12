@@ -24,7 +24,7 @@ struct CrossingCupView: View {
                     .fontWeight(.bold)
                     .font(.system(size:40))
             Spacer()
-    //Add a toggle to each of these, if toggle isOff/On then grey out the image or hide it
+    //Add a toggle to each of these, if toggle is Off/On then grey out the image or hide it
             
             
             HStack{
